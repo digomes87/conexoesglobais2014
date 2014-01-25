@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+<!-- <html lang="en-US"> -->
+<html lang="en-US" class="fade">
+<!-- 
+  ^ a class of "fade" makes slides fade smoothly into one another
+ -->
+<!-- <html lang="en-US" class="nonumbers"> -->
+<!-- 
+  If you want no numbers on the slides add a "nonumbers" class 
+  to the HTML element.
+  Adding a class of "fade" will make slides fade into another. 
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>Desenvolvimento web com Web2py</title>
+<!-- 
+  If you upload your slides to the web, ensure that you have 
+  a good title - this shows up in search results and social
+  media links
+ -->
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+  <style type="text/css">
+/*    div[id$='bullets'].slide > div::after {
+      content: 'For Information only, do NOT present';
+      background: rgba(200,0,0,0.5);
+      color: #fff;
+      position: absolute;
+      top: 20px;
+      right: 0;
+      padding: 5px 20px;
+      transform: rotate(90deg) translate(52%,-150px);
+      border-radius: 5px;
+    }*/
+    .full div[id$='bullets'].slide > div::after {
+      animation: wiggle alternate 1s infinite;
+    }
+    @keyframes wiggle {
+      from {
+        transform: rotate(90deg) translate(52%,-150px);
+      }
+      to {
+        transform: rotate(90deg) translate(52%,-160px);
+      }
+    }
+    .demourl {
+      bottom: 10px;
+    }
+  </style>
+</head>
+<body class="list">
+
+  <header class="caption">
+    <h1>Desenvolvimento web com Web2py</h1>
+    <p class="footer" style="border: 1px dashed #000; margin-top: 15px; padding: 10px; width: 1000px;">
+      Relsi Maron
+      <br>
+      CTO do CodeFreelas.com
+      <br>
+      <a href="http://github.com/relsi">github.com/relsi</a> - <a href="http://facebook.com/relsi">facebook.com/relsi</a>
+    </p>
+  </header>
+  <aside class="talkdescription">
+    <br>
+    <p>Essa apresentação de slides usa html5</i>. Clique em qualquer slide para começar a apresentação, e então navegue usando as setas direcionais do teclado.
+    </p>
+    <p class="abstract">
+       Essa apresentação introduz ao framework web2py e mostra como desenvolver uma aplicação web rapidamente.  
+    </p>
+  </aside>
+
+<!-- 
+    Simply copy the whole block for each slide you want.
+  Special slides get extra classes. Each slide needs an ID 
+  to allow for bookmarking and target jumping.
+-->
+
+  <div id="1" class="slide"><div>
+    <section>
+      <header>
+        <h2>O que é web2py?</h2>
+      </header>
+      <img src="images/web2py.png" class="middle shadow" height="350">
+
+    </section>
+  </div></div>
+
+<!-- end slide block -->
+
+ 
+  <div id="2" class="slide"><div>
+    <section>
+      <header>
+        Quando surgiu?
+      </header>
+      <ul class="longlist">
+        <li>2007</li>
+        <li>Massimo Di Pierro</li>
+        <li>Universidade Depaul</li>
+      </ul>
+    </section>
+  </div></div>
+  
+  <div id="3" class="slide"><div>
+    <section>
+      <header>
+        Principais Características
+      </header>
+      <ul class="longlist">
+        <li>Curva de aprendizado pequena</li>
+        <li>Compatibilidade Reversa</li>
+        <li>Em constante evolução</li>
+        <li>Fácil de utilizar</li>
+        <li>Multi plataforma</li>
+        <li>Seguro</li>
+        <li>Framework Full Stack</li>
+      </ul>
+    </section>
+  </div></div>
+
+
+  <div id="4" class="slide"><div>
+    <section>
+      <header>
+        <h2>Padrão MVC</h2>
+      </header>
+      <img src="images/mvc.png" class="middle shadow" height="350">
+
+    </section>
+  </div></div>
+
+  <div id="5" class="slide"><div>
+    <section>
+      <header>
+        <h2>Model</h2>
+      </header>
+      <img src="images/model.png" class="middle shadow" height="350">
+
+    </section>
+  </div></div>
+
+  <div id="6" class="slide"><div>
+    <section>
+      <header>
+        <h2>Controller</h2>
+      </header>
+      <img src="images/controller.png" class="middle shadow" height="350">
+
+    </section>
+  </div></div>
+
+  <div id="7" class="slide"><div>
+    <section>
+      <header>
+        <h2>View</h2>
+      </header>
+      <img src="images/view.png" class="middle shadow" height="350">
+
+    </section>
+  </div></div>
+
+
+  <div id="8" class="slide"><div>
+    <section>
+      <header>
+        <h2>Resultado</h2>
+      </header>
+      <img src="images/resultado.png" class="middle shadow" height="350">
+
+    </section>
+  </div></div>
+
+  <div id="9" class="slide"><div>
+    <section>
+      <header>
+        <h2>DAL - Database Abstraction Layer</h2>
+      </header>
+      <img src="images/dal.png" class="middle shadow" height="350">
+
+    </section>
+  </div></div>
+
+  <div id="10" class="slide"><div>
+    <section>
+      <header>
+        <h2>Formulários e Validadores</h2>
+      </header>
+      <img src="images/forms.png" class="middle shadow" height="350">
+
+    </section>
+  </div></div>
+
+  <div id="11" class="slide"><div>
+    <section>
+      <header>
+        <h2>Form</h2>
+      </header>
+      <img src="images/form.png" class="middle shadow" height="350">
+
+    </section>
+  </div></div>
+
+  <div id="12" class="slide"><div>
+    <section>
+      <header>
+        <h2>SQLFORM</h2>
+      </header>
+      <img src="images/sqlform.png" class="middle shadow" height="350">
+
+    </section>
+  </div></div>
+
+  <div id="13" class="slide"><div>
+    <section>
+      <header>
+        <h2>SQLFORM.factory</h2>
+      </header>
+      <img src="images/sqlformf.png" class="middle shadow" height="350">
+
+    </section>
+  </div></div>
+
+  <div id="14" class="slide"><div>
+    <section>
+      <header>
+        <h2>Custom Forms</h2>
+      </header>
+      <img src="images/customform.png" class="middle shadow" height="350">
+    </section>
+  </div></div>
+
+  <div id="15" class="slide"><div>
+    <section>
+      <header>
+        <h2>CRUD</h2>
+      </header>
+      <img src="images/crud.png" class="middle shadow" height="350">
+    </section>
+  </div></div>
+
+
+  <div id="16" class="slide"><div>
+    <section>
+      <header>
+        <h2>SQLFORM.grid</h2>
+      </header>
+      <img src="images/sqlformgrid.png" class="middle shadow" height="350">
+    </section>
+  </div></div>
+
+  <div id="17" class="slide"><div>
+    <section>
+      <header>
+        <h2>Controle de Acesso</h2>
+      </header>
+      <img src="images/auth.png" class="middle shadow" height="350">
+    </section>
+  </div></div>
+
+  <div id="18" class="slide"><div>
+    <section>
+      <header>
+        Ajuda
+      </header>
+      <ul class="longlist">
+        <li>Comunidade web2py Brasil.</li>
+        <li><a href="https://groups.google.com/forum/#!forum/web2py-users-brazil">https://groups.google.com/forum/#!forum/web2py-users-brazil</a></li>
+        <li>Comunidade Python RS</li>
+        <li><a href="https://groups.google.com/forum/#!forum/pytche">https://groups.google.com/forum/#!forum/pytche</a></li>
+        <li>Documentação do web2py.</li>
+        <li><a href="http://www.web2py.com/book">http://www.web2py.com/book</a></li>
+      </ul>
+    </section>
+  </div></div>
+
+  <div id="19" class="slide"><div>
+    <section>
+      <header>
+        <h2>Perguntas?</h2>
+      </header>
+      <br>
+      <img src="images/respondendo.gif" 
+           class="middle shadow" height="400">
+    </section>
+  </div></div>
+
+  <div id="20" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>Vamos começar?</h2>
+      </header>
+    </section>
+  </div></div>
+
+
+  <div id="21" class="slide"><div>
+    <section>
+      <strong>Baixando o web2py</strong>
+      <p>http://web2py.com</p>
+
+     <strong>Iniciando o web2py</strong>
+      <p>python web2py.py -a 1234</p>
+
+     <strong>Acessando a interface administrativa</strong>
+      <p>http://localhost:8000/admin</p>
+
+    </section>
+  </div></div>
+
+  <!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+  <div class="progress"><div></div></div>
+  <script src="scripts/script.js"></script>
+  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>

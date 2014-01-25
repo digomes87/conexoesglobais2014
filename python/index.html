@@ -1,0 +1,523 @@
+<!DOCTYPE HTML>
+<!-- <html lang="en-US"> -->
+<html lang="en-US" class="fade">
+<!-- 
+  ^ a class of "fade" makes slides fade smoothly into one another
+ -->
+<!-- <html lang="en-US" class="nonumbers"> -->
+<!-- 
+  If you want no numbers on the slides add a "nonumbers" class 
+  to the HTML element.
+  Adding a class of "fade" will make slides fade into another. 
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>Python Básico para Web2py</title>
+<!-- 
+  If you upload your slides to the web, ensure that you have 
+  a good title - this shows up in search results and social
+  media links
+ -->
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+  <style type="text/css">
+/*    div[id$='bullets'].slide > div::after {
+      content: 'For Information only, do NOT present';
+      background: rgba(200,0,0,0.5);
+      color: #fff;
+      position: absolute;
+      top: 20px;
+      right: 0;
+      padding: 5px 20px;
+      transform: rotate(90deg) translate(52%,-150px);
+      border-radius: 5px;
+    }*/
+    .full div[id$='bullets'].slide > div::after {
+      animation: wiggle alternate 1s infinite;
+    }
+    @keyframes wiggle {
+      from {
+        transform: rotate(90deg) translate(52%,-150px);
+      }
+      to {
+        transform: rotate(90deg) translate(52%,-160px);
+      }
+    }
+    .demourl {
+      bottom: 10px;
+    }
+  </style>
+</head>
+<body class="list">
+
+  <header class="caption">
+    <h1>Python Básico para Web2py</h1>
+    <p class="footer" style="border: 1px dashed #000; margin-top: 15px; padding: 10px; width: 1000px;">
+      Relsi Maron
+      <br>
+      CTO do CodeFreelas.com
+      <br>
+      <a href="http://github.com/relsi">github.com/relsi</a> - <a href="http://facebook.com/relsi">facebook.com/relsi</a>
+    </p>
+  </header>
+  <aside class="talkdescription">
+    <br>
+    <p>Essa apresentação de slides usa html5</i>. Clique em qualquer slide para começar a apresentação, e então navegue usando as setas direcionais do teclado.
+    </p>
+    <p class="abstract">
+       Vamos aprender um pouco sobre a linguagem de programação Python para utilizar o framework de desenvolvimento para web Web2py. Essa introdução foi desenvolvida com base nesse artigo: <a href="http://learnxinyminutes.com/docs/pt-br/python-pt/">http://learnxinyminutes.com/docs/pt-br/python-pt/</a>
+    </p>
+  </aside>
+
+<!-- 
+    Simply copy the whole block for each slide you want.
+  Special slides get extra classes. Each slide needs an ID 
+  to allow for bookmarking and target jumping.
+-->
+
+
+  <div id="1" class="slide"><div>
+    <section>
+      <header>
+      </header>
+      <img src="images/python-logo-inkscape.svg" 
+           class="middle shadow" height="200">
+    </section>
+  </div></div>
+
+<!-- end slide block -->
+
+
+  <div id="2" class="slide"><div>
+    <section>
+      <header>
+        <h2>O que é?</h2>
+      </header>
+      <ul class="longlist">
+        <li>Uma linguagem de programação de alto nível.</li>
+        <li>Interpretada.</li>
+        <li>Orientada a objetos.</li>
+        <li>Open Source.</li>
+      </ul>
+    </section>
+  </div></div>
+  
+  <div id="3" class="slide"><div>
+    <section>
+      <header>
+        Quando surgiu?
+      </header>
+      <img src="images/guido.jpg" 
+           class="middle shadow" height="350">
+    </section>
+  </div></div>
+
+  <div id="4" class="slide"><div>
+    <section>
+      <header>
+        Quem usa?
+      </header>
+      <img src="images/quem.png" 
+           class="middle shadow" height="400">
+    </section>
+  </div></div>
+
+
+  <div id="5" class="slide"><div>
+    <section>
+      <header>
+        <h2>Porque usar Python?</h2>
+      </header>
+      <ul class="longlist">
+        <li>Pequena curva de aprendizagem.</li>
+        <li>Legível.</li>
+        <li>Produtiva.</li>
+      </ul>
+    </section>
+  </div></div>
+
+  <div id="6" class="slide"><div>
+    <section>
+      <img src="images/most-popula.jpg" 
+           class="middle shadow" height="450">
+    </section>
+  </div></div>
+
+  <div id="7" class="slide"><div>
+    <section>
+      <strong>Java</strong>
+      <pre>
+        <code>import java.lang.*;</code>
+        <code>public class HelloWorld</code>
+        <code>{</code>
+        <code>  public static void main (String[] args)</code>
+        <code>  {</code>
+        <code>    System.out.println("Hello, world!");</code>
+        <code>  }</code>
+        <code>}</code>
+      </pre>
+    </section>
+  </div></div>
+
+  <div id="8" class="slide"><div>
+    <section>
+      <strong>Python</strong>
+      <pre>
+        <code>print "hello world"</code>
+      </pre>
+    </section>
+  </div></div>
+
+  <div id="9" class="slide"><div>
+    <section>
+      <header>
+        <h2>O que é preciso saber?</h2>
+      </header>
+      <img src="images/programador.jpg" 
+           class="middle shadow" height="400">
+    </section>
+  </div></div>
+
+  <div id="10" class="slide"><div>
+    <section>
+      <header>
+        <h2>O que é preciso saber?</h2>
+      </header>
+      <ul class="longlist">
+        <li>Noções de lógica de programação.</li>
+        <li>Inglês básico (leitura).</li>
+        <li>Gostar de resolver problemas.</li>
+        <li>Criatividade.</li>
+      </ul>
+    </section>
+  </div></div>
+
+
+
+  <div id="11" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>Vamos começar?</h2>
+      </header>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+
+  <div id="13" class="slide"><div>
+    <section>
+      <strong>Comentários</strong>
+      <pre>
+        <code># Comentários de uma linha começam sustenido</code>
+        <code>...</code>
+        <code>...</code>
+        <code>""" Comentários de várias linhas podem ser escritos</code>
+        <code>    usando três ". Muito usado quando é necessário uma</code>
+        <code>    explicação mais detalhada.</code>
+        <code>"""</code>
+      </pre>
+    </section>
+  </div></div>
+
+
+  <div id="14" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>Tipos de dados.</h2>
+      </header>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+
+  <div id="15" class="slide"><div>
+    <section>
+      <header>
+        <h2>Tipos de dados.</h2>
+      </header>
+      <ul class="longlist">
+        <li>Strings.</li>
+        <li>Listas.</li>
+        <li>Tuplas.</li>
+        <li>Dicionários.</li>
+        <li>Números inteiros.</li>
+        <li>Números de ponto flutuante.</li>
+        <li>Booleano.</li>
+        <li>Números complexos.</li>
+      </ul>
+    </section>
+  </div></div>
+
+
+<div id="16" class="slide"><div>
+    <section>
+      <strong>Strings</strong>
+      <pre>
+        <code># Strings são criadas com " ou '</code>
+        <code>"Isso é uma string."</code>
+        <code>'Isso também é uma string.'</code>
+      </pre>
+      <strong>Exemplo de operações</strong>
+      <pre>
+        <code>"Olá " + "mundo!" #=> "Olá mundo!"</code>
+        <code>"Esta é uma string"[0] #=> 'E'</code>
+      </pre>
+    </section>
+  </div></div>
+
+<div id="17" class="slide"><div>
+    <section>
+      <strong>Listas</strong>
+      <pre>
+        <code># Listas armazenam sequências de dados</code>
+        <code>lista = []</code>
+        <code># Você pode inicializar uma lista com valores</code>
+        <code>outra_lista = [4, 5, 6]</code>
+      </pre>
+      <strong>Exemplo de operações</strong>
+      <pre>
+        <code>lista.append(1)    # lista é agora [1]</code>
+        <code>lista.append(2)    # lista é agora [1, 2]</code>
+        <code>lista.append(3)    # lista é agora [1, 2, 3]</code>
+        <code>lista[0] #=> 1</code>
+        <code>lista[-1] #=> 3</code>
+      </pre>
+    </section>
+  </div></div>
+
+
+<div id="18" class="slide"><div>
+    <section>
+      <strong>Tuplas</strong>
+      <pre>
+        <code># Tuplas são iguais a listas, mas são imutáveis</code>
+        <code>tup = (1, 2, 3)</code>
+      </pre>
+      <strong>Exemplo de operações</strong>
+      <pre>
+        <code>tup[0] #=> 1</code>
+        <code>tup[0] = 3  # Isso gera uma exceção do tipo TypeError</code>
+        <code>len(tup) #=> 3</code>
+      </pre>
+    </section>
+  </div></div>
+
+<div id="19" class="slide"><div>
+    <section>
+      <strong>Dicionários</strong>
+      <pre>
+        <code># Dicionários armazenam 'mapeamentos' (do tipo chave-valor)</code>
+        <code>dicionario_vazio = {}</code>
+        <code>dicionario = {"um": 1, "dois": 2, "três": 3}</code>
+
+      </pre>
+      <strong>Exemplo de operações</strong>
+      <pre>
+        <code># Acesse valores usando []</code>
+        <code>dicionario["um"] #=> 1</code>
+        <code>dicionario.keys() #=> ["três", "dois", "um"]</code>
+        <code>dicionario.values() #=> [3, 2, 1]</code>
+      </pre>
+    </section>
+  </div></div>
+
+<div id="20" class="slide"><div>
+    <section>
+      <strong>Números inteiros</strong>
+      <pre>
+        <code>1</code>
+        <code>2</code>
+        <code>100</code>
+        
+      </pre>
+      <strong>Exemplo de operações</strong>
+      <pre>
+        <code>1 + 1 #=> 2</code>
+        <code>8 - 1 #=> 7</code>
+        <code>10 * 2 #=> 20</code>
+        <code>35 / 5 #=> 7</code>
+      </pre>
+    </section>
+  </div></div>
+
+<div id="21" class="slide"><div>
+    <section>
+      <strong>Números de ponto flutuante (Float)</strong>
+      <p>A divisão de números inteiros no python arredonda para baixo</p>
+      <pre>
+        <code>5 / 2 #=> 2</code>       
+      </pre>
+      <p>Aí entram os números de ponto flutuante</p>
+      <pre>
+        <code>2.0  # Isso é um 'float'</code>
+        <code>5.0 / 2.0 #=> 2.5 agora sim</code>
+      </pre>
+    </section>
+  </div></div>
+
+
+<div id="22" class="slide"><div>
+    <section>
+      <strong>Booleano</strong>
+      <p>Assumem apenas dois estados Verdadeiro ou Falso</p>
+      <p>São o resultado de comparações</p>
+      <p>Exemplos</p>
+      <pre>
+        <code>1 == 1 #=> True</code>
+        <code>1 != 1 #=> False</code>
+        <code>1 < 10 #=> True</code>
+        <code>1 > 10 #=> False</code>
+        <code>1 < 2 < 3 #=> True</code>
+      </pre>
+    </section>
+  </div></div>
+
+
+
+  <div id="23" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>Controle</h2>
+      </header>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+
+<div id="24" class="slide"><div>
+    <section>
+      <strong>If</strong>
+      <pre>
+        <code># Para começar, vamos criar uma variável</code>
+        <code>alguma_var = 5</code>
+        <code># Esses comandos irão imprimir "alguma_var é menor que 10"</code>
+        <code>if alguma_var > 10:</code>
+        <code>    print "some_var é maior que 10."</code>
+        <code>elif some_var < 10:    # Esse 'elif' é opcional</code>
+        <code>    print "some_var é menor que 10."</code>
+        <code>else:           # Esse 'else' também é opcional</code>
+        <code>    print "some_var é igual a 10."</code>
+      </pre>
+    </section>
+  </div></div>
+
+<div id="25" class="slide"><div>
+    <section>
+      <strong>for</strong>
+      <pre>
+        <code># Laços (ou loops) 'for' iteram em listas.</code>
+        <code>for animal in ["cachorro", "gato", "rato"]:</code>
+        <code>    # Você pode usar % para interpolar strings formatadas</code>
+        <code>    print "%s é um mamífero" % animal</code>
+ 
+      </pre>
+    </section>
+  </div></div>
+
+<div id="26" class="slide"><div>
+    <section>
+      <strong>while</strong>
+      <pre>
+        <code>""" Laços 'while' executam enquanto uma condição.</code>
+        <code>    dada for verdadeira.</code>
+        <code>"""</code>
+        <code>x = 0</code>
+        <code>while x < 4:</code>
+        <code>    print x</code>
+        <code>    x += 1  # Isso é um atalho para a expressão x = x + 1</code>
+ 
+      </pre>
+    </section>
+  </div></div>
+
+  <div id="27" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>Funções</h2>
+      </header>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+
+<div id="28" class="slide"><div>
+    <section>
+      Funções são realizam operações com dados
+      <pre>
+        <code># Use 'def' para definir novas funções</code>
+        <code>def soma(x, y):</code>
+        <code>  print "x é %s e y é %s" % (x, y)</code>
+        <code>  return x + y    # Retorne valores usando 'return'</code>
+      </pre>
+      <pre>
+        <code># Chamando funções com parâmetros</code>
+        <code>soma(5, 6) #=> imprime "x é 5 e y é 6" e retorna o valor 11</code>
+      </pre>
+    </section>
+  </div></div>
+
+
+  <div id="29" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>Ajuda</h2>
+      </header>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+
+  <div id="30" class="slide"><div>
+    <section>
+      <ul class="longlist">
+        <li>Comunidade Python Brasil.</li>
+        <li><a href="https://groups.google.com/forum/#!forum/python-brasil">https://groups.google.com/forum/#!forum/python-brasil</a></li>
+        <li>Comunidade Python RS</li>
+        <li><a href="https://groups.google.com/forum/#!forum/pytche">https://groups.google.com/forum/#!forum/pytche</a></li>
+        <li>Curso Python para Zumbis.</li>
+        <li><a href="http://pycursos.com/python-para-zumbis/">http://pycursos.com/python-para-zumbis/</a></li>
+        <li>Documentação do Python.</li>
+        <li><a href="http://www.python.org/doc/">http://www.python.org/doc/</a></li>
+      </ul>
+    </section>
+  </div></div>
+
+  <div id="31" class="slide"><div>
+    <section>
+      <header>
+        <h2>Perguntas?</h2>
+      </header>
+      <br>
+      <img src="images/respondendo.gif" 
+           class="middle shadow" height="400">
+    </section>
+  </div></div>
+
+<!--   <div id="32" class="slide"><div>
+    <section>
+      <header>
+        <h2>Obrigado</h2>
+      </header>
+      <ul class="nobull">
+        <li><strong>Slides</strong>: {slideurl}</li>
+      </ul>
+    <footer class="notes">
+    </footer>
+
+    </section>
+  </div></div> -->
+
+  <!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+  <div class="progress"><div></div></div>
+  <script src="scripts/script.js"></script>
+  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
